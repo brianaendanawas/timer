@@ -1,9 +1,17 @@
 let times = process.argv.slice(2);
-let numCheck = times[0] * 1;
+let numCheck = true;
+
+for (let i = 0; i < times.length; i++) {
+  if (!(times[i] * 1)) {
+    numCheck = false;
+  } else if (times[i] < 0) {
+    numCheck = false;
+  }
+}
 
 if (!numCheck) {
   return;
-} else if (times[0] < 0) {
+} else if (!numCheck) {
   return;
 } else {
   for (const time of times) {
