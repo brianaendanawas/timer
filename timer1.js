@@ -11,8 +11,6 @@ for (let i = 0; i < times.length; i++) {
 
 if (!numCheck) {
   return;
-} else if (!numCheck) {
-  return;
 } else {
   for (const time of times) {
     setTimeout(() => {
